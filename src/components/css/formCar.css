@@ -1,0 +1,107 @@
+.formCar{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-bottom: 2px solid #c3c3c354;
+}
+.formCar p{
+    font-size: 14px;
+    color: #6769FF;
+    font-family: 'Roboto', sans-serif;
+}
+.formCar__progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-bottom: 2px solid #c3c3c354;
+}
+.formCar__progress p {
+    font-size: 10px;
+    padding-right: 14px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.Content{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.Content__Text{
+ font-size: 28px;
+ font-family: 'Lato', sans-serif;
+
+}
+.Content__Text p{
+margin-bottom: 0;
+}
+.Content__Text span:nth-child(2){
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+   
+   }
+.Content__Text--change{
+    color:#EF3340
+}
+
+.form-input {
+    margin: 40px 0;
+    width: 100%;
+    border: 2px solid #d2cfcfa6;
+    border-radius: 4px;
+  }
+  .form-input label {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 45px;
+  }
+  .form-input .placeholder {
+    position: absolute;
+    display: block;
+    top: 23px;
+    z-index: 2;
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    cursor: text;
+  }
+  .form-input input,
+  .form-input textarea {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+  
+    transition: border-color 200ms ease-in-out;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+  .form-input textarea {
+    min-height: 30px;
+    padding: 8px 0;
+  }
+  .form-input input {
+    height: 30px;
+  }
+  .form-input input:focus,
+  .form-input input:valid,
+  .form-input textarea:focus,
+  .form-input textarea:valid {
+    border-bottom: 2px solid orange;
+  }
+  .form-input input:focus + .placeholder,
+  .form-input input:valid + .placeholder,
+  .form-input textarea:focus + .placeholder,
+  .form-input textarea:valid + .placeholder {
+    top: 0;
+    cursor: inherit;
+    font-size: 14px;
+    color: orange;
+  }

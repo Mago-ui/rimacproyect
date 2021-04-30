@@ -1,0 +1,298 @@
+.Login{
+    height: 100vh;
+    grid-template-rows: 308px 1fr;
+    display: grid;
+}
+.Login__banner{
+    background: #ECF0FF;
+       position: relative;
+}
+
+.Login__banner-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+}
+
+.Login__img{
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+
+}
+.Login__banner-text{
+    padding-left: 35px;
+    padding-right: 90px;
+}
+
+.Login__banner-textNew{
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+
+}
+.Login__banner-textSegurity{
+    font-size: 28px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.Login__banner-textSegurity span{
+    color:#EF3340
+}
+.Login__banner-textPar{
+    font-size: 14px;
+    color:#676F8F;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+.Login__banner-nav p{
+    font-size: 14px;
+    color:#6769FF;
+    font-family: 'Roboto', sans-serif;
+}
+.Login__banner-cell{
+    margin-bottom: -5px;
+    width: 15px;
+    padding-right: 5px;
+}
+
+
+.loginForm{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.loginForm p{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.loginForm__section input{
+    width: 96%;
+    height: 56px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #c0bebe;
+    padding-left: 3%;
+    font-family: 'Lato', sans-serif;
+
+}
+.loginForm__section div {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+   
+}
+
+.loginForm__section div select {
+     color: #676F8F;
+     border: 1px solid #c0bebe;
+     border-radius: 6px 0 0 6px;
+     height: 59.8px;
+     width: 96px;
+     font-family: 'Lato', sans-serif;
+
+   
+}
+.loginForm__section div input {
+    border-radius: 0 6px 6px 0;
+    font-family: 'Lato', sans-serif;
+
+  
+}
+.loginForm__data{
+    font-size: 12px;
+}
+
+#c3 input:checked ~ .checkmark {
+    background-color: #43B748;
+    border-radius: 4px;
+    }
+   
+    
+    .container {
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        display: flex;
+        line-height: 1.7;
+        color: #676F8F;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 10px;
+
+    }
+    
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+    }
+    
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+    .loginForm__cotizar{
+        height: 56px;
+        width: 100%;
+        margin-bottom: 30px;
+        background: #EF3340;
+        color: white;
+        border: 1px solid #EF3340;
+        border-radius: 5px;
+        margin-top:21px;
+        font-family: 'Lato', sans-serif;
+
+    }   
+    .Login__banner-nav--change{
+        display: none;
+    }
+    .Login__img--Two{
+        display: none;
+        padding-top: 55px;
+    }
+    .Login__banner-firma{
+        display: none;
+    }
+    .Mensaje__error{
+        color: #c30b0b;
+    }
+    .Mensaje__error--change{
+        position: absolute;
+        bottom: -14px;
+    }
+    .loginForm__section-select{
+        position: relative;
+    }
+
+    @media (min-width: 990px){
+        .Login__banner-firma{
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            color: #bababa8a;
+            padding-top: 32px;
+            margin-left: -14px;
+
+        }
+        .Login__img--Two{
+            display: block;
+        }
+        .Login__banner-nav--change{
+            display: block;
+        }
+        .Login{
+            height: 100vh;
+            grid-template-rows: 1fr;
+            display: grid;
+            grid-template-columns: 470px auto;
+        }
+        .loginForm__section input{
+            width: 288px;
+        
+        }
+        .loginForm__section div{
+            width: 303px;
+
+        }
+        .loginForm__cotizar{
+            width: 306px;
+            font-size: 14px;
+
+        }
+        .loginForm{
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 301px;
+            align-items: center;
+            padding-right: 27px;
+            position:relative;
+            padding-top: 76px;
+        }
+        .Login__banner-nav--change{
+            position: absolute;
+            top: 0;
+            width: 68%;
+            font-size: 14px;
+            right: -100px;
+        }
+        .Login__banner-nav--change span{
+            color: #676F8F;
+            font-size:12px;
+            margin-right: 24px;
+        }
+        .Login__banner-nav--change p{
+            font-size:14px;
+        }
+        .Login__img{
+            display: none;
+        }
+        .Login__banner{
+            background-image: url('/src/images/paisaje.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .Login__banner-desk{
+            display: none;
+        }
+        .Login__banner-nav {
+            padding-left: 96px;
+            padding-right: 35px;
+            padding-top: 24px;
+        }
+        .Login__banner-text {
+            padding-left: 110px;
+        }
+        .Login__banner-textSegurity{
+            font-size: 36px;
+        }
+        .Login__banner-textNew{
+            font-size: 12px;
+        }
+      
+
+    }
